@@ -1,12 +1,13 @@
-#! /usr/bin/ruby -Ku
+#! /usr/bin/ruby
 
 printf("Content-Type: text/html\n\n")
 
-printf("<HTML>\n")
-printf("<HEAD><TITLE>CGIのテスト</TITLE></HEAD>\n")
-printf("<meta charset='UTF-8'>")
-printf("<BODY>\n")
-printf("<A HREF='http://www.yahoo.co.jp/'>リンク</A>\n")
-printf("</BODY>\n")
-printf("</HTML>\n")
+print <<EOM
+<HTML>
+<HEAD><TITLE>CGI test</TITLE></HEAD>
+<BODY>
+Link to <A HREF='http://www.yahoo.com/'>Yahoo</A>
+</BODY>
+</HTML>
+EOM
 

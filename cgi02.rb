@@ -2,12 +2,17 @@
 
 printf("Content-Type: text/html\n\n")
 
-test = (1+2)*3
-printf("%d<BR>\n", test)
-
+answer = (1+2)*3
 date = Time.now
-printf("%s<BR>\n", date)
-
+str_date = sprintf("%s", date)
 r = rand(100)
-printf("%d<BR>\n", r)
+
+print <<EOM
+<H1> Calculation </H1>
+#{answer} <BR>
+<H1> Date </H1>
+#{str_date} <BR>
+<H1> Random </H1>
+#{r} <BR>
+EOM
 
