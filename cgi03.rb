@@ -1,4 +1,4 @@
-#! /usr/bin/ruby
+#! /usr/bin/env ruby
 
 require 'cgi'
 printf("Content-Type: text/html\n\n")
