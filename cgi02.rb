@@ -3,8 +3,10 @@
 printf("Content-Type: text/html\n\n")
 
 answer = (1+2)*3
+
 date = Time.now
 str_date = sprintf("%s", date)
+
 r = rand(100)
 
 print <<EOM
