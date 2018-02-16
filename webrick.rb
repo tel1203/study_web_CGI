@@ -9,8 +9,6 @@ module WEBrick
   end 
 end
 
-p WEBrick::Config::HTTP
-
 # Configuration for Web server
 opt = { 
   :BindAddress    => nil,
